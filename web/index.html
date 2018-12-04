@@ -3,72 +3,130 @@
 <head>
 <meta charset="utf-8">
 <title>Group4Project</title>
+<style>
+.nav_tab:hover {
+    background-color: #555;
+    color: white;
+}
+#group_info {
+	display:none;
+}
+#video_area {
+	display:block;
+}
+#video::cue {
+  background-image: linear-gradient(to bottom, dimgray, lightgray);
+  color: papayawhip;
+}
+#video::cue(b) {
+  color: peachpuff;
+}
+</style>
+<script>
+	function selectGroupInfo(){
+		document.getElementById("group_info").style.display="block";
+		document.getElementById("video_area").style.display="none";
+	}
+	function selectVideo(){
+		document.getElementById("group_info").style.display="none";
+		document.getElementById("video_area").style.display="block";
+	}
+	function toggleCap(){
+		const val = document.getElementById("captButton").innerText
+		if ("Show Captions" === val)
+			document.getElementById("captButton").innerText="Hide Captions"
+		else
+			document.getElementById("captButton").innerText="Show Captions"
+	}
+</script>
 </head>
 
 <body>
-	<img src="imanges/logo.png" width="250" height="100" alt=""/>
+  <header>
+	<img src="images/logo.png" width="250" height="100" alt=""/>
 
-	    <div class="PRIMARYhdr"></div>
-    <nav class="SECONDhdr" id="menu">
-      <table width="880" border="1">
-  <tbody>
-
-    <tr>
-		<td><h3>About Group 4</h3></td>
-		<td><h3>VIDEO ARCHIVE</h3></td>
-		<td><h3>HTML</h3></td>
-		<td><h3>CSS</h3></td>
-		<td><h3>JAVASCRIPT</h3></td>
-		<td><h3>ABOUT</h3></td>
-    </tr>
-  </tbody>
-</table>
-    </nav>
+	<div class="PRIMARYhdr"></div>
+	<nav class="SECONDhdr" id="menu">
+	<table width="880" border="1">
+ 	  <tbody>
+	  <tr>
+		<td class="nav_tab" onClick="selectGroupInfo()"><h3>About Group 4</h3></td>
+		<td class="nav_tab" onClick="selectVideo()"><h3>VIDEO ARCHIVE</h3></td>
+		<td class="nav_tab"><h3>HTML</h3></td>
+		<td class="nav_tab"><h3>CSS</h3></td>
+		<td class="nav_tab"><h3>JAVASCRIPT</h3></td>
+		<td class="nav_tab"><h3>ABOUT</h3></td>
+	  </tr>
+	  </tbody>
+	</table>
+	</nav>
   </header>
 <HR>
+	<BR> <BR>
+  <table align="right" border="1">
+    <tr>
+      <th><H2>COURSE CONTENT</H2></th>
+    </tr>
+    <tr>
+      <td>HTML</td>
+    </tr>
+    <tr>
+      <td>  [ <a href="http://www.makealink.com">Item 1</a> ]</td>
+    </tr>
+    <tr>
+      <td>  [ <a href="http://www.makealink.com">Item 2</a> ]</td>
+    </tr>
 	
-	<BR>
-	<BR>
-<table align="right" border="1">
-  <tr>
-    <th><H2>COURSE CONTENT</H2></th>
-  </tr>
-  <tr>
-    <td>HTML</td>
-  </tr>
-	 <tr>
-    <td>  [ <a href="http://www.makealink.com">Item 1</a> ]</td>
-  </tr>
-   <tr>
-    <td>  [ <a href="http://www.makealink.com">Item 2</a> ]</td>
-  </tr>
+    <tr>
+      <td>CSS</td>
+    </tr>
+    <tr>
+      <td>  [ <a href="http://www.makealink.com">Item 1</a> ]</td>
+    </tr>
+    <tr>
+      <td>  [ <a href="http://www.makealink.com">Item 2</a> ]</td>
+    </tr>
 	
-  <tr>
-    <td>CSS</td>
-  </tr>
-	 <tr>
-    <td>  [ <a href="http://www.makealink.com">Item 1</a> ]</td>
-  </tr>
-   <tr>
-    <td>  [ <a href="http://www.makealink.com">Item 2</a> ]</td>
-  </tr>
-	
-  <tr>
-    <td>Javascript</td>
-  </tr>
-	 <tr>
-    <td>  [ <a href="http://www.makealink.com">Item 1</a> ]</td>
-  </tr>
-   <tr>
-    <td>  [ <a href="http://www.makealink.com">Item 2</a> ]</td>
-  </tr>
-</table>
+    <tr>
+      <td>Javascript</td>
+    </tr>
+    <tr>
+      <td>  [ <a href="http://www.makealink.com">Item 1</a> ]</td>
+    </tr>
+    <tr>
+      <td>  [ <a href="http://www.makealink.com">Item 2</a> ]</td>
+    </tr>
+  </table>
 	
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/AVujCueerIQ?start=15" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		<hr>
-		<p></p>
-		<br>
-		<hr>
+  <div id="video_area">
+<!--
+    <video id="video" width="560" height="315" 
+	src="https://www.youtube.com/embed/AVujCueerIQ?start=15"
+	controls >
+    </video> <br>
+-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/AVujCueerIQ?start=15" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br>
+    <button onClick="toggleCap()" id="captButton">Show Captions</button>
+    <select>
+      <option value="english">English</option>
+      <option value="hindi">Hindi</option>
+      <option value="thai">Thai</option>
+      <option value="korean">Korean</option>
+    </select>
+
+  </div>
+
+  <div id="group_info">
+     <h4>ITC6355 Group 4</h4>
+     <p>Our member include ...</p>
+
+  </div>
+
+<hr>
+	<p></p>
+	<br>
+<hr>
 </body>
 </html>
