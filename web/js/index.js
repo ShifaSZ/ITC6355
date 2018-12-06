@@ -7,6 +7,8 @@ document.addEventListener("DOMContentLoaded", function () {
     initialiseMediaPlayer();
 }, false);
 
+//console.log(jsonData.courses[0]);
+
 function initialiseMediaPlayer() {
     mediaPlayer = document.getElementById('video1');
     captionLanguage = document.getElementById("captionLanguage")
@@ -38,6 +40,8 @@ function initialiseMediaPlayer() {
 
     mediaPlayer.addEventListener('timeupdate', updateProgressBar, false);
     captionLanguage.addEventListener("change", changeCaptionLanguage);
+
+    loadSideBar();
 }
 
 function togglePlayPause() {
@@ -106,5 +110,28 @@ function toggleControls() {
         btn.innerHTML = 'Show Custom Controls';
         controls.className = 'hide-custom-controls';
         mediaPlayer.setAttribute("controls", "controls")
+    }
+}
+
+function loadSideBar() {
+    console.log("Loading side bar content");
+    var div = document.createElement("div");
+    div.addClass = "card-header";
+    div.id = "sideBarHeader";
+    document.getElementById("sideBar").appendChild(div);
+
+
+    //document.getElementById('sideBarHeader').innerHTML = '<ol><li>' + jsonData.courses[0].chapters[0] + '</li></ol>';
+    let lengthOfCourses = jsonData.courses.length;
+    //let lengthOfChapter = jsonData.courses[counterForCourses].chapters.length;
+
+
+
+    for (var i = 0; i < lengthOfCourses; i++) {
+
+        document.getElementById('sideBarHeader').innerHTML += '<div class="card-body text-secondary"> <h5 class = "card-title" >' + jsonData.courses[i].name + '</h5>';
+        for (var j = 0; j < jsonData.courses[i].chapters.length; j++) {
+            document.getElementById('sideBarHeader').innerHTML += '<div class = "list-group"> <a href = "#" class = "list-group-item list-group-item-action">   ' + jsonData.courses[i].chapters[j] + '</a>  </div>'
+        }
     }
 }
