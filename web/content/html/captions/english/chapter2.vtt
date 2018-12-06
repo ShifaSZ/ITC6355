@@ -1,0 +1,95 @@
+﻿WEBVTT
+
+1
+00:00:00.030 --> 00:00:01.999
+hello and welcome to your first tutorial
+
+2
+00:00:02.000 --> 00:00:04.999
+on beginning HTML now if you watch the
+
+3
+00:00:05.000 --> 00:00:06.999
+introductory video we talked about what
+
+4
+00:00:07.000 --> 00:00:09.999
+you needed and I said that all you need
+
+5
+00:00:10.000 --> 00:00:12.999
+is notepad so you should go ahead and
+
+6
+00:00:13.000 --> 00:00:14.998
+open up notepad now and that's all you
+
+7
+00:00:15.000 --> 00:00:17.999
+really need to follow this series now if
+
+8
+00:00:18.000 --> 00:00:18.999
+you have other editors you can go ahead
+
+9
+00:00:19.000 --> 00:00:21.999
+and use those as well so in this video
+
+10
+00:00:22.000 --> 00:00:23.999
+we're gonna create our very first web
+
+11
+00:00:24.000 --> 00:00:26.000
+page using HTML now web browsers can
+
+12
+00:00:27.000 --> 00:00:28.999
+display a lot of different documents
+
+13
+00:00:29.000 --> 00:00:32.999
+it's not just HTML they can display SVG
+
+14
+00:00:33.000 --> 00:00:37.998
+files XML files so the very first thing
+
+15
+00:00:38.000 --> 00:00:39.999
+we have to do is tell the browser what
+
+16
+00:00:40.000 --> 00:00:42.999
+type of file this is and we do that by
+
+17
+00:00:43.000 --> 00:00:45.999
+using the doctype declaration so this
+
+18
+00:00:46.289 --> 00:00:48.999
+really isn't a HTML section it's just a
+
+19
+00:00:49.340 --> 00:00:50.999
+declaration and we're telling the
+
+20
+00:00:51.420 --> 00:00:53.999
+browser exactly what to open here and so
+
+21
+00:00:54.058 --> 00:00:56.999
+let's go ahead and type in doctype HTML
+
+22
+00:00:57.000 --> 00:01:00.000
+and we put an exclamation point there
+
+23
+00:01:00.999 --> 00:01:02.920
+we've type in doctype and we type in
+
+

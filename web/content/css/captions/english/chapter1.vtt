@@ -1,0 +1,110 @@
+﻿WEBVTT
+
+1
+00:00:00.030 --> 00:00:01.999
+welcome to your very first beginning
+
+2
+00:00:02.000 --> 00:00:04.999
+tutorial on CSS and this is part of our
+
+3
+00:00:05.000 --> 00:00:06.999
+ongoing web development series now if
+
+4
+00:00:07.000 --> 00:00:08.999
+you do not have a solid understanding of
+
+5
+00:00:09.000 --> 00:00:11.999
+HTML you should go to my channel page
+
+6
+00:00:12.000 --> 00:00:14.999
+and go through the HTML for beginners
+
+7
+00:00:15.000 --> 00:00:16.999
+tutorial set that's kind of a
+
+8
+00:00:17.000 --> 00:00:18.999
+prerequisite now if you already know
+
+9
+00:00:19.000 --> 00:00:19.999
+HTML and you feel you don't need that
+
+10
+00:00:20.000 --> 00:00:21.999
+that's fine but if you don't know
+
+11
+00:00:22.000 --> 00:00:23.999
+anything about HTML I strongly recommend
+
+12
+00:00:24.000 --> 00:00:25.999
+that you go ahead and take that series
+
+13
+00:00:26.000 --> 00:00:27.999
+because an understanding of HTML is
+
+14
+00:00:28.000 --> 00:00:30.999
+really crucial to using CSS now as a
+
+15
+00:00:31.000 --> 00:00:32.999
+note we will also be introducing some
+
+16
+00:00:33.000 --> 00:00:35.999
+new HTML elements in this series and the
+
+17
+00:00:36.000 --> 00:00:36.999
+reason is they go hand-in-hand together
+
+18
+00:00:37.000 --> 00:00:39.999
+so it didn't make sense to discuss those
+
+19
+00:00:40.000 --> 00:00:41.999
+in the HTML for beginners because they
+
+20
+00:00:42.000 --> 00:00:44.999
+really work hand in hand with CSS in
+
+21
+00:00:45.000 --> 00:00:45.999
+terms of what you will need we're just
+
+22
+00:00:46.000 --> 00:00:47.999
+gonna use notepad for now just like we
+
+23
+00:00:48.000 --> 00:00:50.999
+did in the HTML for beginners series now
+
+24
+00:00:51.000 --> 00:00:51.999
+eventually we'll use an editor but for
+
+25
+00:00:52.000 --> 00:00:54.999
+now we just need no pen okay so what is
+
+26
+00:00:55.000 --> 00:00:58.999
+CSS well here's the dictionary version
+
+27
+00:00:59.000 --> 00:01:02.000
+CSS stands for cascading style sheets it
+

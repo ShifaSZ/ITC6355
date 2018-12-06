@@ -1,0 +1,114 @@
+﻿WEBVTT
+
+1
+00:00:00.060 --> 00:00:05.399
+welcome to the second beginning tutorial
+
+2
+00:00:02.428 --> 00:00:07.080
+on JavaScript now in the last video I 
+
+3
+00:00:05.400 --> 00:00:08.790
+said we would be using notepad
+
+4
+00:00:07.080 --> 00:00:11.009
+throughout the series but I kind of
+
+5
+00:00:08.789 --> 00:00:13.980
+changed my mind because it's a little
+
+6
+00:00:11.009 --> 00:00:16.079
+bit easier to use notepad plus plus with
+
+7
+00:00:13.980 --> 00:00:17.730
+JavaScript now if you want to use
+
+8
+00:00:16.079 --> 00:00:19.528
+notepad that's not a problem you can
+
+9
+00:00:17.730 --> 00:00:22.560
+continue to do that but if you want to
+
+10
+00:00:19.528 --> 00:00:24.480
+use notepad plus plus it's very easy to
+
+11
+00:00:22.559 --> 00:00:26.549
+download and it's a very quick install
+
+12
+00:00:24.480 --> 00:00:28.859
+in fact if you open up your browser and
+
+13
+00:00:26.550 --> 00:00:30.449
+go to Google and just type in notepad
+
+14
+00:00:28.859 --> 00:00:32.460
+plus plus you'll see it comes up very
+
+15
+00:00:30.449 --> 00:00:35.100
+quickly here and you can just hit this
+
+16
+00:00:32.460 --> 00:00:37.380
+download link right here and as I said
+
+17
+00:00:35.100 --> 00:00:39.689
+it's a very very quick install now once
+
+18
+00:00:37.380 --> 00:00:41.969
+you open up notepad plus plus I want you
+
+19
+00:00:39.689 --> 00:00:43.530
+to go ahead and copy this template right
+
+20
+00:00:41.969 --> 00:00:45.120
+<here because this is going to be the
+
+21
+00:00:43.530 --> 00:00:47.549
+default template that we'll use
+
+22
+00:00:45.119 --> 00:00:49.468
+throughout the series and then I want
+
+23
+00:00:47.549 --> 00:00:52.890
+you to go ahead and save as and then
+
+24
+00:00:49.469 --> 00:00:54.989
+save it as a HTML document and I just
+
+25
+00:00:52.890 --> 00:00:56.909
+saved it on my desktop so we'll be
+
+26
+00:00:54.988 --> 00:00:59.429
+reusing this code over and over again
+
+27
+00:00:56.909 --> 00:01:02.218
+this basic template now as I said in the
+
+28
+00:00:59.429 --> 00:01:05.280
+last video our JavaScript code goes
+

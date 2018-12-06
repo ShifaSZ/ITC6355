@@ -1,132 +1,150 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-<meta charset="utf-8">
-<title>Group4Project</title>
-<style>
-.nav_tab:hover {
-    background-color: #555;
-    color: white;
-}
-#group_info {
-	display:none;
-}
-#video_area {
-	display:block;
-}
-#video::cue {
-  background-image: linear-gradient(to bottom, dimgray, lightgray);
-  color: papayawhip;
-}
-#video::cue(b) {
-  color: peachpuff;
-}
-</style>
-<script>
-	function selectGroupInfo(){
-		document.getElementById("group_info").style.display="block";
-		document.getElementById("video_area").style.display="none";
-	}
-	function selectVideo(){
-		document.getElementById("group_info").style.display="none";
-		document.getElementById("video_area").style.display="block";
-	}
-	function toggleCap(){
-		const val = document.getElementById("captButton").innerText
-		if ("Show Captions" === val)
-			document.getElementById("captButton").innerText="Hide Captions"
-		else
-			document.getElementById("captButton").innerText="Show Captions"
-	}
-</script>
+    <title>Group 2 | Web Application Development</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
 </head>
 
 <body>
-  <header>
-	<img src="images/logo.png" width="250" height="100" alt=""/>
 
-	<div class="PRIMARYhdr"></div>
-	<nav class="SECONDhdr" id="menu">
-	<table width="880" border="1">
- 	  <tbody>
-	  <tr>
-		<td class="nav_tab" onClick="selectGroupInfo()"><h3>About Group 4</h3></td>
-		<td class="nav_tab" onClick="selectVideo()"><h3>VIDEO ARCHIVE</h3></td>
-		<td class="nav_tab"><h3>HTML</h3></td>
-		<td class="nav_tab"><h3>CSS</h3></td>
-		<td class="nav_tab"><h3>JAVASCRIPT</h3></td>
-		<td class="nav_tab"><h3>ABOUT</h3></td>
-	  </tr>
-	  </tbody>
-	</table>
-	</nav>
-  </header>
-<HR>
-	<BR> <BR>
-  <table align="right" border="1">
-    <tr>
-      <th><H2>COURSE CONTENT</H2></th>
-    </tr>
-    <tr>
-      <td>HTML</td>
-    </tr>
-    <tr>
-      <td>  [ <a href="http://www.makealink.com">Item 1</a> ]</td>
-    </tr>
-    <tr>
-      <td>  [ <a href="http://www.makealink.com">Item 2</a> ]</td>
-    </tr>
-	
-    <tr>
-      <td>CSS</td>
-    </tr>
-    <tr>
-      <td>  [ <a href="http://www.makealink.com">Item 1</a> ]</td>
-    </tr>
-    <tr>
-      <td>  [ <a href="http://www.makealink.com">Item 2</a> ]</td>
-    </tr>
-	
-    <tr>
-      <td>Javascript</td>
-    </tr>
-    <tr>
-      <td>  [ <a href="http://www.makealink.com">Item 1</a> ]</td>
-    </tr>
-    <tr>
-      <td>  [ <a href="http://www.makealink.com">Item 2</a> ]</td>
-    </tr>
-  </table>
-	
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <img src="images/logo.png" width="250" height="auto" class="d-inline-block align-top" alt="Group 2">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-  <div id="video_area">
-<!--
-    <video id="video" width="560" height="315" 
-	src="https://www.youtube.com/embed/AVujCueerIQ?start=15"
-	controls >
-    </video> <br>
--->
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/AVujCueerIQ?start=15" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <br>
-    <button onClick="toggleCap()" id="captButton">Show Captions</button>
-    <select>
-      <option value="english">English</option>
-      <option value="hindi">Hindi</option>
-      <option value="thai">Thai</option>
-      <option value="korean">Korean</option>
-    </select>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">HTML <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">CSS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">JAVASCRIPT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">ABOUT US</a>
+                </li>
 
-  </div>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <div class="container-fluid ">
+        <div class="row no-gutters">
+            <div class="col-12 col-sm-6 col-md-8">
+                <div class="card">
+                    <h5 class="card-header">Chapter 1</h5>
+                    <video id="video1" controls width="70%" style="align-self: center">
+                        <source src="content/html/video/chapter1.mp4" type="video/mp4">
+                        <track id="korean" label="Korean" src="content/html/captions/korean/chapter1.vtt" kind="subtitles" srclang="ko" />
+                        <track id="english" label="English" src="content/html/captions/english/chapter1.vtt" kind="subtitles" srclang="en" />
+                        <track id="thai" label="Thai" src="content/html/captions/thai/chapter1.vtt" kind="subtitles" srclang="th" />
+                    </video>
+                    <div class="card-body">
 
-  <div id="group_info">
-     <h4>ITC6355 Group 4</h4>
-     <p>Our member include ...</p>
+                        <button id='show-controls' type="button" class="btn btn-secondary" data-toggle="button" aria-pressed="false" autocomplete="off" title='show controls' onclick='toggleControls();'>
+                            Show Custom Controls
+                        </button>
+                        <br>
+                        <br>
 
-  </div>
+                        <div id='media-controls' class="hide-custom-controls">
+                            <div class="progress">
+                                <div id='progress-bar' class="progress-bar progress-bar-striped" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+                                </div>
+                            </div>
 
-<hr>
-	<p></p>
-	<br>
-<hr>
+                            <a id='play-pause-button' class="btn btn-default fa fa-play fa-2x" onclick='togglePlayPause();'></a>
+
+                            <a id='stop-button' class="btn btn-default fa fa-stop fa-2x" onclick='stopPlayer();'></a>
+
+                            <a id='mute-button' class="btn btn-default fa fa-volume-up fa-2x" onclick='toggleMute();'></a>
+
+
+
+                            <select id="captionLanguage">
+                                <option value="">No Caption</option>
+                                <option value="en">English</option>
+                                <option value="hi">Hindi</option>
+                                <option value="th">Thai</option>
+                                <option value="ko">Korean</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="card-body">
+
+                        <h5 class="card-title">Chapter 1</h5>
+                        <p class="card-text"> Welcome to your very first beginning tutorial on CSS and this is part of our ongoing web development series now if you do not have a solid understanding of HTML you should go to my channel page and go through the HTML for beginners tutorial set that's kind of a prerequisite now if you already know HTML and you feel you don't need that that's fine but if you don't know anything about HTML I strongly recommend that you go ahead and take that series because an understanding of HTML is really crucial to using CSS now as a note we will also be introducing some new HTML elements in this series and the reason is they go hand-in-hand together so it didn't make sense to discuss those in the HTML for beginners because they really work hand in hand with CSS in terms of what you will need we're just gonna use notepad for now just like we did in the HTML for beginners series now eventually we'll use an editor but for now we just need no pen okay so what is CSS well here's the dictionary version CSS stands for cascading style sheets.</p>
+                        <a href="#" class="btn btn-danger fa fa-play float-right"> Next Chapter</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-6 col-md-4">
+                <div class="card border-secondary float-right" style="max-width: 18rem;">
+                    <div class="card-header">Course Contents</div>
+                    <div class="card-body text-secondary">
+                        <h5 class="card-title">HTML</h5>
+
+                        <div class="list-group">
+                            <a href="#" class="list-group-item list-group-item-action active">
+                                Chapter 1 - Introduction to HTML
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">Chapter 2 - HTML Elements</a>
+                            <a href="#" class="list-group-item list-group-item-action">Chapter 3 - HTML5 </a>
+
+                        </div>
+
+
+                    </div>
+                    <div class="card-body text-secondary">
+                        <h5 class="card-title">CSS</h5>
+                        <div class="list-group">
+                            <a href="#" class="list-group-item list-group-item-action">
+                                Chapter 1 - CSS Starter Guide
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">Chapter 2 - Basics of CSS </a>
+                            <a href="#" class="list-group-item list-group-item-action">Chapter 3 - CSS Elements</a>
+                        </div>
+
+                    </div>
+                    <div class="card-body text-secondary">
+                        <h5 class="card-title">JAVASCRIPT</h5>
+                        <div class="list-group">
+                            <a href="#" class="list-group-item list-group-item-action">
+                                Chpater 1 - Javascript Basics
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">Chapter 2 - Why Javascript?</a>
+                            <a href="#" class="list-group-item list-group-item-action">Chapter 3 - Advanced Javascript</a>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
 </body>
+<script src="js/index.js"></script>
+
 </html>

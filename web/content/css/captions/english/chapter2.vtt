@@ -1,0 +1,100 @@
+﻿WEBVTT
+
+1
+00:00:00.030 --> 00:00:02.999
+welcome to the second video on CSS today
+
+2
+00:00:03.000 --> 00:00:04.999
+we're going to look at changing the font
+
+3
+00:00:05.068 --> 00:00:07.999
+color the font type in the font size and
+
+4
+00:00:08.000 --> 00:00:10.999
+so let's go ahead and use the source we
+
+5
+00:00:11.000 --> 00:00:11.999
+did from the last video and let's open
+
+6
+00:00:12.000 --> 00:00:13.999
+that up now now you will remember that
+
+7
+00:00:14.369 --> 00:00:16.999
+we created our first rule and that we
+
+8
+00:00:17.000 --> 00:00:19.999
+decided to go ahead and style the h1
+
+9
+00:00:20.278 --> 00:00:22.948
+HTML element right here and we gave it a
+
+10
+00:00:23.000 --> 00:00:25.999
+background color of purple and so let's
+
+11
+00:00:26.000 --> 00:00:26.999
+just go ahead and take a look at that
+
+12
+00:00:27.000 --> 00:00:28.999
+again and there you can see we have our
+
+13
+00:00:29.000 --> 00:00:30.999
+purple background now what I want to do
+
+14
+00:00:31.000 --> 00:00:33.999
+is create a new role so let's go ahead
+
+15
+00:00:34.000 --> 00:00:34.999
+and do that and so we just do the same
+
+16
+00:00:35.000 --> 00:00:38.999
+thing we did with the h1 rule we'll just
+
+17
+00:00:39.000 --> 00:00:40.999
+copy and paste that and we're going to
+
+18
+00:00:41.039 --> 00:00:44.999
+go ahead and style the P HTML element so
+
+19
+00:00:45.000 --> 00:00:45.999
+that's right here this one everything
+
+20
+00:00:46.000 --> 00:00:48.999
+within here and everything within here
+
+21
+00:00:49.000 --> 00:00:51.999
+now what I want to point out is we said
+
+22
+00:00:52.000 --> 00:00:55.999
+H 1 here and that equated to the h1
+
+23
+00:00:56.000 --> 00:00:57.999
+header when you put in P here and just P
+
+24
+00:00:58.000 --> 00:01:00.000
+we are going to alter everything all of
+
+
+
