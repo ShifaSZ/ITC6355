@@ -121,17 +121,19 @@ function loadSideBar() {
     document.getElementById("sideBar").appendChild(div);
 
 
-    //document.getElementById('sideBarHeader').innerHTML = '<ol><li>' + jsonData.courses[0].chapters[0] + '</li></ol>';
     let lengthOfCourses = jsonData.courses.length;
-    //let lengthOfChapter = jsonData.courses[counterForCourses].chapters.length;
-
-
 
     for (var i = 0; i < lengthOfCourses; i++) {
 
         document.getElementById('sideBarHeader').innerHTML += '<div class="card-body text-secondary"> <h5 class = "card-title" >' + jsonData.courses[i].name + '</h5>';
         for (var j = 0; j < jsonData.courses[i].chapters.length; j++) {
-            document.getElementById('sideBarHeader').innerHTML += '<div class = "list-group"> <a href = "#" class = "list-group-item list-group-item-action">   ' + jsonData.courses[i].chapters[j] + '</a>  </div>'
+            document.getElementById('sideBarHeader').innerHTML += '<div class = "list-group"> <a class = "list-group-item list-group-item-action" onclick="switchPage(' + i + ',' + j + ');">' + jsonData.courses[i].chapters[j] + '</a>  </div>'
         }
     }
+}
+
+function switchPage(x, y) {
+    console.log("Here");
+    var text = document.getElementById('transcriptText');
+    text.innerHTML = jsonData.courses[x].chapters[y];
 }
