@@ -6,10 +6,19 @@ let progressBar;
 document.addEventListener("DOMContentLoaded", function () {
     initialiseMediaPlayer();
 }, false);
+let currentCourse = 0;
+let currentChapter = 0;
 
 //console.log(jsonData.courses[0]);
 
+function nextChapter(){
+  currentChapter = (currentChapter+1)%3
+  switchPage(currentCourse, currentChapter)
+}
+
 function initialiseMediaPlayer() {
+    var nextChp = document.getElementById('nextChapter');
+    nextChp.onclick = nextChapter;
     mediaPlayer = document.getElementById('video1');
     captionLanguage = document.getElementById("captionLanguage")
     playPauseBtn = document.getElementById('play-pause-button');
@@ -135,5 +144,17 @@ function loadSideBar() {
 function switchPage(x, y) {
     console.log("Here");
     var text = document.getElementById('transcriptText');
-    text.innerHTML = jsonData.courses[x].chapters[y];
+    var courseHeader = jsonData.courses[x].chapters[y];
+    text.innerHTML = courseHeader;
+    var text = document.getElementById('courseHeader');
+    text.innerHTML = courseHeader;
+    var text = document.getElementById('chapterDesc');
+    text.innerHTML = jsonData.courses[x].chapterDesc[y];
+    var video1 = document.getElementById('video1');
+    const videoUrl="content/"+jsonData.courses[x].name.toLowerCase()+"/video/chapter"+(y%2+1)+".mp4";
+    //var source = document.createElement('source');
+    video1.setAttribute('src', videoUrl);
+    video1.load()
+    currentCourse = x;
+    currentChapter = y;
 }

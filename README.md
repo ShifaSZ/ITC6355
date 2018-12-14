@@ -1,5 +1,10 @@
 # ITC6355
 
+## Final submittion:
+### 1) The team presentation is under directory doc/
+### 2) The sql for MySQL table and data setting up is under sql/
+### 3) All the website files for HTML, CSS, JAVASCRIPT, VIDEO and other data are under web/
+
 ## 1. How to use Github in developing this project
 ### run for once when enter this project
 ```

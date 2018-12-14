@@ -54,9 +54,9 @@
         <div class="row no-gutters">
             <div class="col-12 col-sm-6 col-md-8">
                 <div class="card">
-                    <h5 class="card-header">Chapter 1</h5>
+                    <h5 class="card-header" id="courseHeader">Chapter 1</h5>
                     <video id="video1" controls width="70%" style="align-self: center">
-                        <source src="content/html/video/chapter1.mp4" type="video/mp4">
+                        <source src="content/html/video/chapter1.mp4" type="video/mp4" id="videoSrc">
                         <track id="korean" label="Korean" src="content/html/captions/korean/chapter1.vtt" kind="subtitles" srclang="ko" />
                         <track id="english" label="English" src="content/html/captions/english/chapter1.vtt" kind="subtitles" srclang="en" />
                         <track id="thai" label="Thai" src="content/html/captions/thai/chapter1.vtt" kind="subtitles" srclang="th" />
@@ -95,8 +95,8 @@
                     <div class="card-body">
 
                         <h5 id="transcriptText" class="card-title">Chapter 1</h5>
-                        <p class="card-text"> Welcome to your very first beginning tutorial on CSS and this is part of our ongoing web development series now if you do not have a solid understanding of HTML you should go to my channel page and go through the HTML for beginners tutorial set that's kind of a prerequisite now if you already know HTML and you feel you don't need that that's fine but if you don't know anything about HTML I strongly recommend that you go ahead and take that series because an understanding of HTML is really crucial to using CSS now as a note we will also be introducing some new HTML elements in this series and the reason is they go hand-in-hand together so it didn't make sense to discuss those in the HTML for beginners because they really work hand in hand with CSS in terms of what you will need we're just gonna use notepad for now just like we did in the HTML for beginners series now eventually we'll use an editor but for now we just need no pen okay so what is CSS well here's the dictionary version CSS stands for cascading style sheets.</p>
-                        <a href="#" class="btn btn-danger fa fa-play float-right"> Next Chapter</a>
+                        <p class="card-text" id="chapterDesc"> Welcome to your very first beginning tutorial on CSS and this is part of our ongoing web development series now if you do not have a solid understanding of HTML you should go to my channel page and go through the HTML for beginners tutorial set that's kind of a prerequisite now if you already know HTML and you feel you don't need that that's fine but if you don't know anything about HTML I strongly recommend that you go ahead and take that series because an understanding of HTML is really crucial to using CSS now as a note we will also be introducing some new HTML elements in this series and the reason is they go hand-in-hand together so it didn't make sense to discuss those in the HTML for beginners because they really work hand in hand with CSS in terms of what you will need we're just gonna use notepad for now just like we did in the HTML for beginners series now eventually we'll use an editor but for now we just need no pen okay so what is CSS well here's the dictionary version CSS stands for cascading style sheets.</p>
+                        <a href="#" class="btn btn-danger fa fa-play float-right" id="nextChapter"> Next Chapter</a>
                     </div>
                 </div>
 
